@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//part 1
+var names = ["Maria", "Antony", "Joy", "Juan"];
+
+
+(function ()  //inserta mi nombre en final del array
+{
+names.push("Geo");
+console.log(names);    
+})();
+
+//part 2
+var long = names.length;
+(function()
+{
+var name2 = ["Maria"]
+
+for(let i=0; i<=long; i++){
+
+if (names[i] == name2 ){
+    console.log(true);
+                       }
+else{
+    console.log(false);
+    }
+}
+})();
+
+//part 3
+
+(function(){
+var  names3 = ["Pedro", "Mario", "Bárbara", "Luisa"];
+var total = names.concat(names3);
+console.log(total);
+
+})();
+
+//part 4
+
+for(const algo in names)
+{
+    console.log(algo);
+}
+    </script>
+</body>
+</html>
